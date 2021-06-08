@@ -116,6 +116,7 @@ input[name=r] {
     background-repeat: no-repeat;
     transition: all .6s ease;
     position: relative;
+    
 }
 
 .slide-img{
@@ -392,27 +393,38 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     font-weight: 500;
 }
 
-@media screen and (max-device-width: 573px) {
+
+@media (max-width: 800px) {
+    .mark{
+        display: none;
+    }
+}
+
+@media (max-width: 765px) {
 
     .about{
         background-color: transparent;
+        display: flex;
+        flex-direction: column;
     }
 
     .about-header{
-       margin-top: 700px;
+        margin-top: 700px;
+     }
+
+
+    .row-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
     }
 
-   }
+    
 
-@media screen and (max-device-width: 667px) {
+}
 
-    .about{
-        background-color: transparent;
-    }
 
-    .about-header{
-       margin-top: 700px;
-    }
 
-   }
+   
 
